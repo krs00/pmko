@@ -40,9 +40,8 @@
     }
 }
 
-/* Enable animation */
-.enable-animation .marquee__content {
-    animation: scroll 10s linear infinite;
+.scroll-animation .marquee__content {
+    animation: scroll 35s linear infinite;
 }
 
 /* -------------------------------- MARQUEE ANIMATION END -------------------------------- */
@@ -96,9 +95,17 @@ body {
     font-weight: 999;
     color: var(--color2);
     font-size: 3.5rem;
-}
+} 
 
 #sub-header {
     min-height: 6vh;
     background-color: var(--color6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header-text {
+    color: white;
 }
