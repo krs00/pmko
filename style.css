@@ -1,0 +1,41 @@
+@import url("reset.css");
+
+:root {
+    --color1: #F54C00;
+    --color2: #FF9600;
+    --color3: #F44EA3;
+    --color4: #C71AFD;
+    --color5: #4941F8;
+    --color6: #009AE4;
+}
+
+body {
+
+    background: repeating-conic-gradient(var(--color1) 0% 25%, var(--color2) 0% 50%) 50% / 20px 20px;
+    background-size: 50px 50px;
+    background-position:
+        0 0,
+        50px 50px;
+    animation: slideAnimation 15s linear infinite;
+
+}
+
+@keyframes slideAnimation {
+    0% {
+        background-position:
+            0 0,
+            50px 50px;
+    }
+
+    100% {
+        background-position:
+            100px 100px,
+            150px 150px;
+    }
+}
+
+
+#header {
+    height: 12vh;
+    background-color: var(--color5)
+}
