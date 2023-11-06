@@ -107,5 +107,9 @@ body {
 }
 
 .sub-header-text {
-    color: white;
+    color: var(--color4);
+}
+
+.hero1 {
+    height: 60vh;
 }
