@@ -9,7 +9,49 @@
     --color6: #009AE4;
 }
 
+/* -------------------------------- COLOR VARIABLES END -------------------------------- */
+
+/* -------------------------------- MARQUEE ANIMATION -------------------------------- */
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+}
+
+/* -------------------------------- MARQUEE ANIMATION END -------------------------------- */
+
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
 body {
+
+
+    /* CALCULATES BASE FONT SIZE */
+    /* USE REM TO EDIT FONT SIZE */
+    font-size: calc(15px + 0.390625vw);
 
     background: repeating-conic-gradient(var(--color1) 0% 25%, var(--color2) 0% 50%) 50% / 20px 20px;
     background-size: 50px 50px;
@@ -20,6 +62,7 @@ body {
 
 }
 
+/* BACKGROUND ANIMATION */
 @keyframes slideAnimation {
     0% {
         background-position:
@@ -34,8 +77,22 @@ body {
     }
 }
 
+/* -------------------------------- HEADING SECTION -------------------------------- */
 
 #header {
-    height: 12vh;
-    background-color: var(--color5)
+    min-height: 12vh;
+    background-color: var(--color5);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.header-title {
+    font-weight: 999;
+    color: var(--color2);
+    font-size: 3.5rem;
+}
+
+#sub-header {
+    min-height: 6vh;
+    background-color: var(--color6);
 }
