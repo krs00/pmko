@@ -13,18 +13,9 @@
 
 /* -------------------------------- MARQUEE ANIMATION -------------------------------- */
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
-}
-
 .marquee {
     --gap: 1rem;
+    position: relative;
     display: flex;
     overflow: hidden;
     user-select: none;
@@ -35,8 +26,23 @@
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
-    min-width: 100%;
     gap: var(--gap);
+    min-width: 100%;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* Enable animation */
+.enable-animation .marquee__content {
+    animation: scroll 10s linear infinite;
 }
 
 /* -------------------------------- MARQUEE ANIMATION END -------------------------------- */
