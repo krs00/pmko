@@ -1,12 +1,12 @@
 @import url("reset.css");
 
 :root {
-    --color1: #F54C00;
-    --color2: #FF9600;
-    --color3: #F44EA3;
-    --color4: #C71AFD;
-    --color5: #4941F8;
-    --color6: #009AE4;
+  --color1: #f54c00;
+  --color2: #ff9600;
+  --color3: #f44ea3;
+  --color4: #c71afd;
+  --color5: #4941f8;
+  --color6: #009ae4;
 }
 
 /* -------------------------------- COLOR VARIABLES END -------------------------------- */
@@ -14,102 +14,99 @@
 /* -------------------------------- MARQUEE ANIMATION -------------------------------- */
 
 .marquee {
-    --gap: 1rem;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: var(--gap);
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
 }
 
 .marquee__content {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-around;
-    gap: var(--gap);
-    min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 
 .scroll-animation .marquee__content {
-    animation: scroll 35s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
 /* -------------------------------- MARQUEE ANIMATION END -------------------------------- */
 
-
 html {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
+  /* CALCULATES BASE FONT SIZE */
+  /* USE REM TO EDIT FONT SIZE */
+  font-size: calc(15px + 0.390625vw);
 
-
-    /* CALCULATES BASE FONT SIZE */
-    /* USE REM TO EDIT FONT SIZE */
-    font-size: calc(15px + 0.390625vw);
-
-    background: repeating-conic-gradient(var(--color1) 0% 25%, var(--color2) 0% 50%) 50% / 20px 20px;
-    background-size: 50px 50px;
-    background-position:
-        0 0,
-        50px 50px;
-    animation: slideAnimation 15s linear infinite;
-
+  background: repeating-conic-gradient(
+      var(--color1) 0% 25%,
+      var(--color2) 0% 50%
+    )
+    50% / 20px 20px;
+  background-size: 50px 50px;
+  background-position: 0 0, 50px 50px;
+  animation: slideAnimation 15s linear infinite;
 }
 
 /* BACKGROUND ANIMATION */
 @keyframes slideAnimation {
-    0% {
-        background-position:
-            0 0,
-            50px 50px;
-    }
+  0% {
+    background-position: 0 0, 50px 50px;
+  }
 
-    100% {
-        background-position:
-            100px 100px,
-            150px 150px;
-    }
+  100% {
+    background-position: 100px 100px, 150px 150px;
+  }
 }
 
 /* -------------------------------- HEADING SECTION -------------------------------- */
 
 #header {
-    min-height: 12vh;
-    background-color: var(--color5);
-    padding-left: 2%;
-    padding-right: 2%;
+  min-height: 12vh;
+  background-color: var(--color5);
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .header-title {
-    font-weight: 999;
-    color: var(--color2);
-    font-size: 3.5rem;
-} 
+  font-weight: 999;
+  color: var(--color2);
+  font-size: 3.5rem;
+}
 
 #sub-header {
-    min-height: 6vh;
-    background-color: var(--color6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  min-height: 6vh;
+  background-color: var(--color6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-header-text {
-    color: var(--color4);
+  color: var(--color4);
 }
 
-.hero1 {
-    height: 60vh;
+/* -------------------------------- HERO SECTION -------------------------------- */
+
+#heroimage {
+    width: vw;
+    height: auto
 }
