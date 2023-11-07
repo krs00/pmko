@@ -108,13 +108,14 @@ body {
   color: var(--color4);
 }
 
-.header-icon {
+.hamburger-icon {
   height: 20px;
   width: auto;
 }
 
 .shopping-cart-icon {
-  height: 27px; 
+  height: 27px;
+  width: auto;
 }
 
 /* -------------------------------- HERO SECTION -------------------------------- */
