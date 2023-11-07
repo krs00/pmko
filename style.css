@@ -83,12 +83,16 @@ body {
   background-color: var(--color5);
   padding-left: 5%;
   padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-title {
   font-weight: 999;
   color: var(--color2);
-  font-size: 3.5rem;
+  font-size: 4rem; 
+  
 }
 
 #sub-header {
@@ -104,12 +108,6 @@ body {
   color: var(--color4);
 }
 
-.header-container-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-icon {
   height: 20px;
   width: auto;
@@ -121,7 +119,4 @@ body {
 
 /* -------------------------------- HERO SECTION -------------------------------- */
 
-#heroimage {
-    width: vw;
-    height: auto
-}
+
