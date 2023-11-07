@@ -81,8 +81,8 @@ body {
 #header {
   min-height: 12vh;
   background-color: var(--color5);
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header-title {
@@ -102,6 +102,21 @@ body {
 
 .sub-header-text {
   color: var(--color4);
+}
+
+.header-container-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icon {
+  height: 20px;
+  width: auto;
+}
+
+.shopping-cart-icon {
+  height: 25px; 
 }
 
 /* -------------------------------- HERO SECTION -------------------------------- */
