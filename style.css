@@ -91,7 +91,8 @@ body {
 .header-title {
   font-weight: 999;
   color: var(--color2);
-  font-size: 4rem; 
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px;
   
 }
 
@@ -124,8 +125,8 @@ body {
   width: auto;
   height: 60vh; 
   overflow: hidden;
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 
 img {
@@ -135,18 +136,116 @@ img {
 }
 
 .hero-sliders {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 25%; /* Adjust top position as needed */
-  left: 25%; /* Adjust left position as needed */
+  width: 100vw; 
+  height: auto;
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  position: absolute;
+  top: 46%
 }
 
-.slider-icon {
-  height: 50px;
+.slider-icon-left {
+  margin: 2%;
+  height: 40px;
+  width: auto; 
+}
+
+.slider-icon-right {
+  margin: 2%;
+  height: 40px;
+  width: auto; 
+}
+
+//
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content-text {
+  font-size: 2rem;
+  font-weight: 999;
+  color: var(--color1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero-text-container {
+  position: absolute;
+  top: 37%; 
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.hero-btn-container {
+  position: absolute;
+  top: 55%; 
+  z-index: 2;
+  display: flex; 
+  justify-content: center;
+  width: 100vw;
+}
+
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--color5);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: var(--color2);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
   width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: var(--color5);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  background-color: var(--color6);
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: var(--color6);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/* -------------------------------- TOP PICKS SECTION -------------------------------- */
+
+.top-picks-heading-text {
+  font-size: 3.4rem;
+  font-weight: 999;
+  color: var(--color2);
+  text-shadow: 1px 1px 2px;
+  text-align: center;
+}
+
+.picks-heading-container {
+  background-color: var(--color5);
 }
 
