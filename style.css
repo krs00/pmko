@@ -425,3 +425,15 @@ select {
 .socials-container {
   margin-top: 5%;
 }
+
+.social-icon {
+  height: 6vh;
+  width: auto;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  gap: 3%;
+}
