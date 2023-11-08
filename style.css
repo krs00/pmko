@@ -189,7 +189,7 @@ img {
   font-weight: 999;
   color: var(--color1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+} 
 
 
 .hero-text-container {
@@ -300,7 +300,7 @@ img {
 .card-text-container {
   height: auto;
   width: 200px;
-  background-color: var(--color5);
+  background-color: var(--color4);
   position: absolute;
   top: 40%; 
   left: 35%;
@@ -328,4 +328,44 @@ img {
 }
 
 
+/* -------------------------------- SHOP CARD COMPONENT -------------------------------- */
 
+/* -------------------------------- LEARN MORE -------------------------------- */
+
+.learn-img-container {
+  height: 50vh;
+  width: 95vw; 
+  overflow: hidden;
+  border-radius: 3px;
+
+}
+
+.learn-card {
+  margin-top: 2%;
+}
+
+.learn-card-container {
+  position: relative;
+}
+
+.learn-text {
+  font-size: 2rem;
+  font-weight: 999;
+  color: var(--color1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.learn-text-container {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+/* -------------------------------- FOOTER SECTION -------------------------------- */
+
+.footer {
+  margin-top: 4%;
+  background-color: var(--color5);
+  height: 50vh;
+  width: auto
+} 
