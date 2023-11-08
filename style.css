@@ -22,6 +22,15 @@
   display: block;
 }
 
+.img-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+  height: 4vh;
+  width: auto;
+}
+
 
 /* -------------------------------- MARQUEE ANIMATION -------------------------------- */
 
@@ -160,13 +169,13 @@ img {
 .slider-icon-left {
   margin: 2%;
   height: 40px;
-  width: auto; 
+  width: auto;
 }
 
 .slider-icon-right {
   margin: 2%;
   height: 40px;
-  width: auto; 
+  width: auto;
 }
 
 //
@@ -228,6 +237,7 @@ img {
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .button-5:hover,
@@ -247,9 +257,9 @@ img {
   transform: translateY(0);
 }
 
-/* -------------------------------- TOP PICKS SECTION -------------------------------- */
+/* -------------------------------- SECTION HEADING BANNER -------------------------------- */
 
-.top-picks-heading-text {
+.section-heading-container {
   font-size: 2.9rem;
   font-weight: 999;
   color: var(--color2);
@@ -257,7 +267,7 @@ img {
   text-align: center;
 }
 
-.picks-heading-container {
+.section-heading-text {
   background-color: var(--color5);
 }
 
@@ -283,19 +293,24 @@ img {
   border-radius: 3px;
 }
 
+.card-img-container img {
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 .card-text-container {
   height: auto;
   width: 200px;
   background-color: var(--color5);
   position: absolute;
-  top: 50%; 
+  top: 40%; 
   left: 35%;
   border-radius: 3px;
   padding: 5%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .card-btn {
-  margin-top: 6%;
+  margin-top: 7%;
 }
 
 .card-title-text {
