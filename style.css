@@ -144,7 +144,7 @@ body {
 
 .hero-container {
   width: auto;
-  height: 60vh; 
+  height: 50vh; 
   overflow: hidden;
   z-index: 1;
   position: relative;
@@ -416,4 +416,12 @@ select {
   color: var(--color2);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center; 
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-skip: ink;
+  text-underline-position: under;
+}
+
+.socials-container {
+  margin-top: 5%;
 }
